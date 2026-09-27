@@ -66,14 +66,15 @@ def show_countries():
     print("Eurozone : EUR")
 
 
-#เลื่อกประเทศที่จะไป/สกุลเงิน
+#เลื่อกประเทศที่จะไป
 def get_country():
     country = input("Enter country name: ").capitalize()
     return country
 
-
+#แปลงเป็นสกุลเงิน
 def tranfer_country_to_money(country):
     return country_currency[country]
+
 
 #ระบุจำนวนเงินที่่ใช้ในทิปนี้
 def get_money():
@@ -98,10 +99,12 @@ def calculate_money_thb(amount,day):
     result = amount / day
     return result
 
+
 #คำนวณเงินนอก
 def calculate_money_country(amount_country,day):
     result = amount_country / day
     return result
+
 
 #แสดงผล
 def show_stats():
