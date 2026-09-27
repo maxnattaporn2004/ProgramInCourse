@@ -113,7 +113,7 @@ def show_stats():
     tranfered = tranfer_country_to_money(country)
     amount = get_money()
     day = get_day()
-    result_thb = calculate_money_thb(amount,day)
+    result_thb = round(calculate_money_thb(amount,day),2)
     result_country = round(calculate_money_country(tranfer_money(tranfered,amount),day),2)
     print("------User------")
     print("ประเทศ : " + country)
