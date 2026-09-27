@@ -1,5 +1,6 @@
 from forex_python.converter import CurrencyRates
 
+
 #ทำประเทศให้เป็นdict
 country_currency = {
     "Japan": "JPY",
@@ -32,6 +33,7 @@ country_currency = {
     "South africa": "ZAR",
     "Eurozone": "EUR"
 }
+
 
 # โชว์ประเทศที่จะไป
 def show_countries():
@@ -70,6 +72,7 @@ def show_countries():
 def get_country():
     country = input("Enter country name: ").capitalize()
     return country
+
 
 #แปลงเป็นสกุลเงิน
 def tranfer_country_to_money(country):
@@ -124,7 +127,6 @@ def show_stats():
     print("เงินที่ใช้ได้ต่อวัน : " , result_thb , " THB")
     print("เงินที่ใช้ได้ต่อวัน : " , result_country , tranfered)
     print("----------------")
-
 
 
 show_stats()
